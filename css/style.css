@@ -16,3 +16,8 @@ body {
   background-color: transparent;
   border: none;
 }
+
+#border-styles {
+  width: 32rem;
+  height: 13.4rem;
+}
