@@ -23,4 +23,16 @@ $(() => {
         let value = $("#style-me").css("border-bottom-left-radius");
         $("#bbl-value").text(`${value}`);
     });
+    
+    $("#copy-text").click(() =>{
+        copyToClipboard("#br-details");
+    });
 });
+
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
